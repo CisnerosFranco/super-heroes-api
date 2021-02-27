@@ -17,7 +17,6 @@ app.get('/get-team', (req, res) => {
         statusCode: 200,
         headers: {
             "Access-Control-Allow-Headers" : "Content-Type",
-            "Access-Control-Allow-Origin": "https://www.example.com",
             "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
         }})
 
