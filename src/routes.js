@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express()
 const fs = require('fs');
+const path = require('path')
 
 
 
@@ -22,11 +23,11 @@ app.get('/get-team', (req, res) => {
 
 
     if(team === 'dc-team') {
-        const file = fs.readFileSync('./public/dc-team.json', 'utf-8');
+        const file = fs.readFileSync(path.join(__dirname,'/public/dc-team.json'), 'utf-8');
         res.send(file);
     }
     else if(team === 'marvel-team'){
-        const file = fs.readFileSync('./public/marvel-team.json', 'utf-8');
+        const file = fs.readFileSync(path.join(__dirname,'./public/marvel-team.json'), 'utf-8');
         res.send(file);
     }
     else {

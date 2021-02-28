@@ -2,12 +2,13 @@
   "name": "super-heros-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon src/server"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
